@@ -24,7 +24,14 @@ input[type="text"]:focus:hover {
   }
   
 
-.top-bar{
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    scrollbar-width: thin;
+}
+
+.top-bar {
     width: 93%;
     background: #f5f5f5;
     height: 36px;
@@ -33,50 +40,44 @@ input[type="text"]:focus:hover {
     display: flex;
     justify-content: space-between;
 }
-body{
-    margin: 0;
-    padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    scrollbar-width: thin;
-    /* overflow: hidden; */
-}
-.jumpman-img{
+
+.jumpman-img {
     width: 50%;
     float: left;
 }
-.jumpman-logo{
+
+.jumpman-logo {
     height: 24px;
     width: 24px;
     padding: 8px 8px 24px 0px;
     left: 0;
 }
-.topbar-list{
+
+.topbar-list {
     list-style-type: none;
     display: flex;
     gap: 16px;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    line-height: 1.75; 
+    line-height: 1.75;
 }
-.topbar-lists{
+
+.topbar-lists {
     align-content: center;
 }
-.topbar-li{
+
+.topbar-li {
     margin: 0;
 }
-.dropdown{
+
+.dropdown {
     margin: 0;
     position: relative;
     display: inline-block;
     z-index: 1;
 }
-/* .topbar-li-help{
-    margin: 0;
-    position: relative;
-    display: inline-block;
-} */
-.dropdown-help{
+
+.dropdown-help {
     display: none;
     position: absolute;
     background-color: #fff;
@@ -86,7 +87,6 @@ body{
     right: -16px;
     padding-bottom: 10px;
     text-align: left;
-    
 }
 
 .dropdown-help a {
@@ -95,59 +95,61 @@ body{
     text-decoration: none;
     display: block;
     z-index: 1;
-    
-    
-  }
-  
-  .dropdown-help a:hover {
-    /* background-color: #ddd; */
+}
+
+.dropdown-help a:hover {
     color: #000;
 }
-.dropdown:hover .dropdown-help {display: block;
-    color: #000;}
-.vertical-line{
+
+.dropdown:hover .dropdown-help {
+    display: block;
+}
+
+.vertical-line {
     border-right: 1px solid;
     height: 12px;
-    /* margin: 6px; */
 }
-.main-navbar{
+
+.main-navbar {
     display: flex;
-    position: relative;
-    /* position: fixed; */
     width: 93%;
     padding-left: 48px;
     padding-right: 48px;
     justify-content: space-between;
-    top: 0;
     background-color: #fff;
-    /* z-index: 1; */
     position: sticky;
     top: 0;
 }
-.nike-logo{
+
+.nike-logo {
     width: 60px;
     height: 60px;
+    
 }
-.navigation{
+
+.navigation {
     display: flex;
     align-items: center;
 }
-.nav-ul{
+
+.nav-ul {
     list-style-type: none;
     display: flex;
     gap: 1.6rem;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
 }
-.nav-li{
+
+.nav-li {
     margin: 0;
 }
-.top-right-nav{
+
+.top-right-nav {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.search-bar{
+
+.search-bar {
     display: flex;
     align-items: center;
     padding: 6px;
@@ -155,14 +157,92 @@ body{
     border-radius: 30px;
     padding: 10px;
 }
-.search{
+
+.search {
     border: none;
     background: none;
 }
-.fa-magnifying-glass{
-    padding-right: 10px;
 
+.fa-magnifying-glass {
+    padding-right: 10px;
 }
+
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    position: relative;
+    top: 50%;
+    transform: translateY(90%);
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+}
+
+@media (max-width: 768px) {
+    .topbar-lists {
+        display: none;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-content {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+    }
+
+    .navbar-content.active {
+        display: flex;
+    }
+
+    .nike-logo{
+        padding-left: 10px;
+    }
+    .nav-ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .nav-li {
+        padding: 10px 0;
+    }
+
+    .top-right-nav {
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+    }
+
+    .navbar-content.active .top-right-nav {
+        display: none;
+    }
+
+    .main-navbar {
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: space-between;
+    }
+}
+
 .banner{
     min-height: 63px;
     max-height: 73px;

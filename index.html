@@ -9,57 +9,62 @@
     <link rel="icon" type="image/x-icon" href="img/nike-favicon.jpeg">
 </head>
 <body>
-    <section top-navbar>
-    <div class="top-bar">
-       <div class="jumpman-img">
-        <img src="img/Jumpman_logo.svg.png" alt="jumpman-logo" class="jumpman-logo">
-    </div>
-       <div class="topbar-lists">
-        <ul class="topbar-list">
-            <li class="topbar-li">Find a Store</li>
-            <div class="vertical-line"></div>
-            <div class="dropdown">
-                <li class="topbar-li">Help</li>
-                <div class="dropdown-help">
-                <a href="#">Order Status</a>
-                <a href="#">Returns</a>
-                <a href="#">Contact Us</a>
+    <section class="top-navbar">
+        <div class="top-bar">
+            <div class="jumpman-img">
+                <img src="img/Jumpman_logo.svg.png" alt="jumpman-logo" class="jumpman-logo">
+            </div>
+            <div class="topbar-lists">
+                <ul class="topbar-list">
+                    <li class="topbar-li">Find a Store</li>
+                    <div class="vertical-line"></div>
+                    <div class="dropdown">
+                        <li class="topbar-li">Help</li>
+                        <div class="dropdown-help">
+                            <a href="#">Order Status</a>
+                            <a href="#">Returns</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="vertical-line"></div>
+                    <li class="topbar-li">Join Us</li>
+                    <div class="vertical-line"></div>
+                    <li class="topbar-li">Sign In</li>
+                </ul>
             </div>
         </div>
-            <div class="vertical-line"></div>
-            <li class="topbar-li">Join Us</li>
-            <div class="vertical-line"></div>
-            <li class="topbar-li">Sign In</li>
-        </ul>
-    </div>
-    </div>
-</section>
-<section class="main-navbar">
-    <div class="logo">
-        <img src="img/nike-logo.jpeg" alt="logo" class="nike-logo">
-    </div>
-    <nav class="navigation">
-        <ul class="nav-ul">
-            <li class="nav-li">New & Featured</li>
-            <li class="nav-li">Men</li>
-            <li class="nav-li">Women</li>
-            <li class="nav-li">Kids</li>
-            <li class="nav-li">Sale</li>
-            <li class="nav-li">Customise</li>
-            <li class="nav-li">SNKRS</li>
-        </ul>
-    </nav>
-    <div class="top-right-nav">
-        <div class="search-bar">
-            <i class="fas fa-magnifying-glass"></i>
-            <input type="text" class="search" placeholder="Search">
+    </section>
+    <section class="main-navbar">
+        <div class="logo">
+            <img src="img/nike-logo.jpeg" alt="logo" class="nike-logo">
         </div>
-            <i class="fa-regular fa-heart" style="color: #000000;"></i>
-            <i class="fas fa-shopping-cart"></i>
-        
-        
-    </div>
-</section>
+        <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-content" id="navbar-content">
+            <nav class="navigation">
+                <ul class="nav-ul">
+                    <li class="nav-li">New & Featured</li>
+                    <li class="nav-li">Men</li>
+                    <li class="nav-li">Women</li>
+                    <li class="nav-li">Kids</li>
+                    <li class="nav-li">Sale</li>
+                    <li class="nav-li">Customise</li>
+                    <li class="nav-li">SNKRS</li>
+                </ul>
+            </nav>
+            <div class="top-right-nav">
+                <div class="search-bar">
+                    <i class="fas fa-magnifying-glass"></i>
+                    <input type="text" class="search" placeholder="Search">
+                </div>
+                <i class="fa-regular fa-heart" style="color: #000000;"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </section>
 <div class="banner">
     <p class="banner-text">New Styles on Sale: Up to 40% Off</p>
     <a href="#" class="banner-link">Shop All Our New Markdowns</a>
@@ -443,5 +448,7 @@
        <li class="sub-footer-li"> Nike Privacy Policy</li>
     </ul>
 </section>
+
+<script src="index.js"></script>
 </body>
 </html>
