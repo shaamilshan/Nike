@@ -200,6 +200,7 @@ input[type="text"]:focus:hover {
 
     .toggle-button {
         display: flex;
+        padding-right:10px;
     }
 
     .navbar-content {
