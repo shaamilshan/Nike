@@ -112,7 +112,7 @@ input[type="text"]:focus:hover {
 
 .main-navbar {
     display: flex;
-    width: 100%;
+    width: 90%;
     padding-left: 48px;
     padding-right: 48px;
     justify-content: space-between;
